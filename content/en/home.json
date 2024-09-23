@@ -1,0 +1,36 @@
+{
+  "pageTitle": "adidas Global Academy",
+  "pageDescription": "Access free online courses with adidas Global Academy to pursue your passions, advance your career and more. Explore adidas Global Academy, powered by ASU.",
+  "sectionHero": {
+    "title": "Limitless learning.<br>Constant growth.",
+    "bgImage": "home-hero.jpg"
+  },
+  "sectionAbout": {
+    "title": "ACCESS YOUR UNTAPPED POTENTIAL",
+    "text": "adidas and Arizona State University are committed to creating a better future through ongoing discovery and exploration of uncharted territories with collaborative research projects, world-class education opportunities and sport both on and off the field.",
+    "invitation": {
+      "title": "You’re invited to join us:",
+      "reasons": ["Create your future.", "Explore your passions.", "Stretch yourself."]
+    },
+    "footer": "We’re excited to include you in our next development - adidas Global Academy, powered by ASU."
+  },
+  "sectionTestimonial":{
+    "quote":"This course taught me a lot; it was great. It was a learning experience to see different views on how to handle situations.",
+    "author":{
+      "title":"Mark Nakamura" ,
+      "text":"Los Altos Girls Basketball Coach"
+    }
+  },
+  "sectionCourses": {
+    "title": "ACCEPT THE CHALLENGE",
+    "text": "Discover what’s next on your journey. Explore our online course offerings below to see how you can pursue your passions and advance your career.",
+    "courses": [
+      {
+        "image": "image-1.png",
+        "duration": "1-3 hours",
+        "title": "HOW TO MAKE YOUR POINT IN 1 MINUTE OR LESS",
+        "text": "Understand the importance of good public speaking skills and learn a three-step process on how to structure your own pitch."
+      }
+    ]
+  }
+}

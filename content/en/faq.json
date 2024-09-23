@@ -1,0 +1,26 @@
+{
+  "pageTitle": "adidas Global Academy | FAQ",
+  "pageDescription": "adidas Global Academy | FAQ",
+  "sectionHero": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "bgImage": "faq-hero.png"
+  },
+  "faqs": [
+    {
+      "question": "WHAT IS ADIDAS GLOBAL ACADEMY?",
+      "answer": "adidas Global Academy is a globally accessible online learning platform created in partnership with Arizona State University for adidas employees. Using adidas Global Academy, learners can advance their individual and career goals by choosing from a library of curated courses."
+    },
+    {
+      "question": "WHO IS ADIDAS GLOBAL ACADEMY FOR?",
+      "answer": "Currently, adidas Global Academy is available to adidas employees. Please sign in with your adidas credentials to access adidas Global Academy."
+    },
+    {
+      "question": "DO I HAVE TO PAY FOR THE COURSES THAT ARE OFFERED ON ADIDAS GLOBAL ACADEMY?",
+      "answer": "All courses offered on adidas Global Academy are available at no cost to learners."
+    },
+    {
+      "question": "WHERE CAN I REQUEST TECHNICAL ASSISTANCE OR REPORT A WEBSITE PROBLEM?",
+      "answer": "To request assistance or report a problem, email us at: <a href='mailto:support@adidasglobalacademy.com' class='text-underline' target='_black'> support@adidasglobalacademy.com </a>"
+    }
+  ]
+}

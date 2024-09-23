@@ -1,0 +1,28 @@
+// Import Bootstrap functions
+@import "bootstrap/scss/functions";
+
+// Import your custom color variables
+@import "colors";
+
+// Override Bootstrap variables here
+$white: $adidas-white;
+$black: $adidas-dark;
+
+$theme-colors: (
+  "primary": $adidas-dark,
+  "secondary": $adidas-white,
+  "maroon": $asu-maroon,
+  "gold": $asu-gold,
+  "theme-grey-1": $grey-1,
+  "theme-grey-2": $grey-2,
+  "theme-grey-3": $grey-3
+);
+
+// Import Bootstrap variables and maps
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+
+// Import Bootstrap mixins
+@import "bootstrap/scss/mixins";
+
+// ... other variable overrides

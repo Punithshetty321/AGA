@@ -1,0 +1,172 @@
+// Required bootstrap dependency
+// custom
+@import "./colors.scss";
+@import "./typography";
+@import "./spacing";
+@import "./font-loader.scss"; // Ensure font-loader is imported
+
+$white: $adidas-white;
+$black: $adidas-dark;
+
+// clean the colors and theme-colors map
+$colors: map-remove(
+  $colors,
+  "blue",
+  "indigo",
+  "purple",
+  "pink",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "teal",
+  "cyan",
+  "gray",
+  "gray-dark"
+);
+
+$theme-colors: (
+  "primary": $adidas-dark,
+  "secondary": $adidas-white,
+  "maroon": $asu-maroon,
+  "gold": $asu-gold,
+  "theme-grey-1": $grey-1,
+  "theme-grey-2": $grey-2,
+  "theme-grey-3": $grey-3
+);
+
+// Remove vanilla grayscale colors
+$grays: map-remove($grays, "100", "200", "300", "400", "500", "600", "700", "800", "900");
+
+// Body
+//
+// Settings for the `<body> element`.
+$body-bg: $adidas-white;
+$body-color: $adidas-dark;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// 
+//
+// Style anchor elements.
+$link-color: $adidas-dark;
+$link-hover-color: darken($adidas-dark, 15%);
+
+$font-family-sans-serif: "DinPro", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$modal-backdrop-bg: $adidas-dark;
+$modal-backdrop-opacity: 0.8;
+
+// Buttons + Forms
+//
+$input-btn-padding-y: 8px;
+$input-btn-padding-x: 24px;
+
+$input-btn-padding-y-sm: 0.25rem;
+$input-btn-padding-x-sm: 0.5rem;
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+
+$btn-font-weight: $font-weight-bold;
+
+$btn-block-spacing-y: 2rem;
+
+$navbar-light-color: rgba($body-color, 1);
+$navbar-light-hover-color: rgba($body-color, 1);
+$navbar-light-active-color: rgba($body-color, 1);
+
+// Allows for customizing button radius independently from global border radius
+
+$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+
+.activated-underline {
+  background: linear-gradient(to left, $asu-gold, $asu-gold 100%);
+  background-position: 100% 90%;
+  background-size: 100% 50%;
+  background-repeat: repeat-x;
+}
+
+.VueCarousel-dot {
+  border-radius: 0 !important;
+  width: 24px !important;
+  background-color: $body-color !important;
+  height: 2px !important;
+  transition: height cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.VueCarousel-dot--active {
+  height: 6px !important;
+}
+.VueCarousel-navigation-button {
+  background-color: $adidas-white !important;
+  height: 48px !important;
+  width: 48px !important;
+  border: 1px solid $grey-2 !important;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover {
+    background-color: $adidas-dark !important;
+    color: $adidas-white !important;
+    border: 1px solid $adidas-dark !important;
+  }
+}
+.VueCarousel-navigation-button {
+  top: 40% !important;
+}
+.VueCarousel-navigation-prev {
+  left: 10px !important;
+}
+.VueCarousel-navigation-next {
+  right: 32px !important;
+}
+.VueCarousel-navigation--disabled {
+  opacity: 0.95 !important;
+  cursor: not-allowed !important;
+  &:hover {
+    opacity: 0.5 !important;
+    background-color: $adidas-white !important;
+    color: $adidas-dark !important;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+a:not(.text-title, .nav-link),
+button {
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.1rem #005fcc !important;
+  }
+}

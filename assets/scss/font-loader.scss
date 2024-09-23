@@ -1,0 +1,26 @@
+@use "sass:list";
+
+@font-face {
+  font-family: "adineuePROCond";
+  src: url("~/assets/fonts/adineue.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "adineuePROCond";
+  src: url("~/assets/fonts/adineuePROCond-Bold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("~/assets/fonts/DDin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("~/assets/fonts/DDin-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

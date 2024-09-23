@@ -1,0 +1,83 @@
+// No need to import mixins here, they're already imported in styles.scss
+
+.font-adinueue {
+  font-family: "adineuePROCond", sans-serif;
+}
+// ... rest of the file remains the same
+
+// @include media-breakpoint-up(sm) {
+//}
+
+// @include media-breakpoint-down(sm) {
+//}
+.font-adinueue {
+  font-family: "adineuePROCond", sans-serif;
+}
+.font-din {
+  font-family: "DINPro", sans-serif;
+}
+.footer-title {
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  @extend .font-adinueue;
+  @include media-breakpoint-up(lg) {
+    font-size: 42px;
+    letter-spacing: -0.32px;
+  }
+}
+.page-title {
+  letter-spacing: -0.23px;
+  line-height: 1.1;
+  font-size: 46px;
+  @include media-breakpoint-up(lg) {
+    font-size: 80px;
+    letter-spacing: -0.32px;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  @extend .font-adinueue;
+  @include media-breakpoint-up(lg) {
+    font-size: 42px;
+  }
+}
+.text-title {
+  font-size: 20px;
+}
+.test-quote{
+  font-size:24px;
+  @extend .font-adinueue;
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+
+}
+.test-author{
+  font-size:18px;
+  @extend .font-din;
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 0 !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-medium {
+  font-size: 18px;
+}
+
+.text-tiny {
+  font-size: 12px;
+}

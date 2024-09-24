@@ -75,8 +75,8 @@
     </section>
 
     <!-- section courses -->
-    <section id="courses" class="py-lg-space-xxl py-space-xl bg-theme-grey-1 position-relative">
-      <div class="container position-relative">
+    <section id="courses" class="py-lg-space-xxl py-space-xl bg-grey position-relative">
+      <div class="course-container position-relative">
         <div class="courses-header text-center">
           <h2 class="section-title">ACCEPT THE CHALLENGE</h2>
           <div class="courses-lead col-lg-6 mx-auto mt-lg-space-sm mt-space-xs">
@@ -198,6 +198,9 @@ const triggerOwlDots = () => {
 }
 .block-courses{
   margin-top: 125px;
+}
+.course-container{
+  background-color: #f5f5f5;
 }
 
 </style>

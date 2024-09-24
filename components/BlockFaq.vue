@@ -2,7 +2,7 @@
   <div class="accordion faq-container border-primary" role="tablist">
     <a
       href="javascript:void(0)"
-      class="text-primary d-flex justify-content-between w-100 text-title font-weight-bold"
+      class="text-primary d-flex justify-content-between w-100 text-title font-weight-bold space-xl"
       @click="toggleFaq"
     >
       <div class="title">{{ question }}</div>

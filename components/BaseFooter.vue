@@ -1,6 +1,6 @@
 <template>
   <footer class="py-lg-space-xxxl py-space-xl">
-    <div class="container px-0 px-lg-xs">
+    <div class="footer-container px-0 px-lg-xs">
       <div class="d-flex flex-wrap justify-content-center align-items-center">
         <h2
           class="section-title mr-md-space-lg ml-md-space-lg ml-lg-0 text-center spacing-md"
@@ -15,7 +15,7 @@
             @click="triggerADA"
           >
             <span>ACCESS ADIDAS GLOBAL ACADEMY</span>
-            <span class="ml-space-xxs">
+            <span class=" ml-space-xxs">
               <svg id="arrow-right-long" viewBox="0 0 24 24" width="25">
                 <title>arrow-right-long</title>
                 <path
@@ -60,6 +60,10 @@ function triggerADA() {
 </script>
 
 <style lang="scss" scoped>
+.footer-container{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
 .icon-primary {
   color: white;
   flex-shrink: 0;
@@ -72,7 +76,6 @@ function triggerADA() {
 .btn-adidas--primary {
   display: flex;
   color: white;
-  padding: 5px 18px;
   align-items: center;
   border-radius: 0;
   font-size: 13px;
@@ -111,9 +114,13 @@ function triggerADA() {
     .icon-primary {
       color: #767677;
     }
-  }
+    }
   &:active {
     transform: translate(0, 0);
   }
-}
+  }
+  .btn-adidas--primary{
+    margin-left: 30px;
+  }
+  
 </style>

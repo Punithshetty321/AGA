@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-white px-0 py-lg-0">
+  <nav class="navbar navbar-expand-lg bg-white px0 py-lg-0 ">
     <div class="container">
       <a href="/" class="navbar-brand px-space-xs" @click.prevent="triggerHomeButton">
         <img src="~/assets/images/siteLogo.png" alt="ASU adidas partnership" class="logo-image" />
@@ -66,13 +66,16 @@ function triggerSignIn() {
 </script>
 
 <style lang="scss" scoped>
-// ... (keep the existing styles)
+@import '~/assets/scss/spacing';
+
 .header-link {
   font-weight: 700;
   width: 100%;
   @media (min-width: 992px) {
     font-weight: 700;
     width: auto;
+    
+    
   }
 }
 .nav-link-hover {
@@ -99,6 +102,7 @@ function triggerSignIn() {
   font-size: 14px;
   @media (min-width: 992px) {
     font-size: 18px;
+    margin-right: 25rem;
   }
 }
 .logo-image {
@@ -116,18 +120,18 @@ function triggerSignIn() {
   }
 }
 .button-ghost {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: map-get($spacers, "space-xxxs");
+  padding-bottom: map-get($spacers, "space-xxxs");
   .cta-label {
-    padding-right: 32px;
+    padding-right: map-get($spacers, "space-lg");
   }
   &:hover {
     border: 1px solid black;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-left: 16px;
+    padding-top: map-get($spacers, "space-xs");
+    padding-bottom: map-get($spacers, "space-xs");
+    margin-left: map-get($spacers, "space-sm");
     .cta-label {
-      padding-right: 16px !important;
+      padding-right: map-get($spacers, "space-sm") !important;
     }
   }
 }
@@ -144,7 +148,7 @@ function triggerSignIn() {
       height: 2px;
       background-color: black;
       display: block;
-      margin: 5px auto;
+      margin: map-get($spacers, "space-xxxs") auto;
       transition: all 0.3s ease-in-out;
     }
     &:hover {

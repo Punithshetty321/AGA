@@ -15,7 +15,7 @@
     </section>
 
     <!-- section about -->
-    <section id="about" class="py-lg-space-xxxl py-space-xl">
+    <section id="about" class=" py-lg-space-xxxl py-space-xl">
       <div class="container">
         <div class="row align-items-center px-lg-space-sm">
           <div class="col-md-7">
@@ -24,7 +24,7 @@
             </header>
             <div class="col-lg-10 px-0">
               <div class="about-lead mt-space-xs text-medium">
-                <p tabindex="-1">adidas and Arizona State University are committed to creating a better future through ongoing discovery and exploration of uncharted territories with collaborative research projects, world-class education opportunities and sport both on and off the field.</p>
+                <p tabindex="-1">Adidas and Arizona State University are committed to creating a better future through ongoing discovery and exploration of uncharted territories with collaborative research projects, world-class education opportunities and sport both on and off the field.</p>
               </div>
               <div class="about-invitaion mt-space-md">
                 <h3 tabindex="-1" class="text-title font-weight-bold">
@@ -56,7 +56,7 @@
 
     <!---section testimonial-->
     <section id="testimonial">
-      <div class="container text-center pt-space-md pt-lg-space-xl pb-space-lg pb-lg-space-xxl">
+      <div class=" testimonial container text-center pt-space-md pt-lg-space-xl pb-space-lg pb-lg-space-xxl">
         <img src="/assets/images/quote.svg" />
         <h1 class="px-lg-space-xxl pt-space-xs pt-lg-space-md pb-space-md test-quote">
           This course taught me a lot; it was great. It was a learning experience to see different views on how to handle situations.
@@ -159,6 +159,7 @@ const triggerOwlDots = () => {
   height: 400px;
   @media (min-width: 992px) {
     height: 550px;
+    margin-bottom: 120px;
   }
   position: relative;
   background-image: url('~/assets/images/home-hero.jpg');
@@ -178,15 +179,25 @@ const triggerOwlDots = () => {
     bottom: 0;
     z-index: 0;
   }
+  
 
   .page-title {
     position: relative;
     z-index: 1;
   }
 }
+
 .image-dot-grid {
   right: 0;
   z-index: 0;
   bottom: -7.2rem;
 }
+.testimonial{
+  margin-bottom: 125px;
+  margin-top: 125px;
+}
+.block-courses{
+  margin-top: 125px;
+}
+
 </style>

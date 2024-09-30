@@ -114,6 +114,8 @@ function triggerSignIn() {
   @media (min-width: 992px) {
     font-size: 18px;
     margin-right: 23rem;
+    margin-left: 1rem;
+    font-weight: bold;
   }
 }
 .logo-image {

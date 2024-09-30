@@ -26,7 +26,7 @@
               <div class="about-lead mt-space-xs text-medium">
                 <p tabindex="-1">Adidas and Arizona State University are committed to creating a better future through ongoing discovery and exploration of uncharted territories with collaborative research projects, world-class education opportunities and sport both on and off the field.</p>
               </div>
-              <div class="about-invitaion mt-space-md">
+              <div class="about-invitaion mt-space-md mt-15">
                 <h3 tabindex="-1" class="text-title font-weight-bold">
                   You're invited to join us:
                 </h3>
@@ -136,8 +136,8 @@ const courses = ref([
   {
     image: "https://courses.adidasglobalacademy.com/asset-v1:ASU+LC01+2021_1+type@asset+block@Legacy_Logo.png",
     duration: "1-3 hours",
-    title: "HOW TO MAKE YOUR POINT IN 1 MINUTE OR LESS",
-    text: "Understand the importance of good public speaking skills and learn a three-step process on how to structure your own pitch."
+    title: "Legacy Coach Fall 2022 Training",
+    text: "Being a coach is more than the game. It’s committing to being a mentor and resource to the whole community. This course will help coaches navigate this responsibility."
   }
 ])
 
@@ -190,7 +190,7 @@ const triggerOwlDots = () => {
 .image-dot-grid {
   right: 0;
   z-index: 0;
-  bottom: -7.2rem;
+  bottom: -1.2rem;
 }
 .testimonial{
   margin-bottom: 125px;
@@ -198,9 +198,22 @@ const triggerOwlDots = () => {
 }
 .block-courses{
   margin-top: 125px;
+  
 }
 .course-container{
   background-color: #f5f5f5;
+  
+
+  
+}
+.invitation-list {
+  list-style: none;
+  li:before {
+    content: "✔";
+    color: #8c1d40;
+    margin-right: 10px;
+    font-size:20px;
+  }
 }
 
 </style>

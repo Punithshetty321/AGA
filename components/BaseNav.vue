@@ -18,6 +18,17 @@
           <li class="nav-item my-lg-0 my-space-sm nav-link-height d-flex align-items-center">
             <a :href="ssoId" target="_blank" class="nav-link btn btn-lg-table btn-block button-ghost header-link text-uppercase d-flex align-items-center justify-content-center text-center" @click="triggerSignIn">
               <span class="cta-label" style="padding-top: 5px">Sign in with adidas sso</span>
+              <span class="ml-space-xxs" style="padding-top: 3px">
+              <svg id="arrow-right-long" viewBox="0 0 24 24" width="16">
+                <title>arrow-right-long</title>
+                <path
+                  d="M17.59 7l5 5-5 5M0 12h22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                ></path></svg></span
+          >
             </a>
           </li>
         </ul>
@@ -42,7 +53,7 @@ const isNavOpen = ref(false)
 const navLinks = [
   { name: "ABOUT", url: "/#about" },
   { name: "COURSES", url: "/#courses" },
-  { name: "FAQ", url: "/faq/" }
+  { name: "FAQ", url: "" }
 ]
 
 function triggerHomeButton() {
@@ -102,7 +113,7 @@ function triggerSignIn() {
   font-size: 14px;
   @media (min-width: 992px) {
     font-size: 18px;
-    margin-right: 25rem;
+    margin-right: 23rem;
   }
 }
 .logo-image {

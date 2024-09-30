@@ -9,7 +9,7 @@
         <div class="mt-lg-0 mt-space-sm">
           <a
             :href="ssoId"
-            class="btn btn-adidas--primary bg-primary d-flex"
+            class="btn btn-adidas--primary bg-black d-flex"
             tabindex="0"
             target="_blank"
             @click="triggerADA"
@@ -62,8 +62,13 @@ function triggerADA() {
 <style lang="scss" scoped>
 .footer-container{
   margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
+.btn{
+  
+    border: 1px solid transparent;
+  }
+
 .icon-primary {
   color: white;
   flex-shrink: 0;
@@ -94,16 +99,16 @@ function triggerADA() {
     transition: all 0.7s cubic-bezier(0.3, 0, 0, 1);
   }
   &:before {
-    border-bottom: 1px solid var(--primary);
-    border-left: 1px solid var(--primary);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     bottom: -5px;
     height: 5px;
     left: 5px;
     width: 100%;
   }
   &:after {
-    border-right: 1px solid var(--primary);
-    border-top: 1px solid var(--primary);
+    border-right: 1px solid black;
+    border-top: 1px solid black;
     height: 100%;
     right: -5px;
     top: 5px;
@@ -121,6 +126,9 @@ function triggerADA() {
   }
   .btn-adidas--primary{
     margin-left: 30px;
+  }
+  .footer-disclaimer{
+    margin-top: 60px;
   }
   
 </style>

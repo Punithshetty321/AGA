@@ -7,7 +7,7 @@
     >
       <div class="hero-content text-center">
         <h1
-          class="page-title text-white text-uppercase font-adinueue font-weight-bolder"
+          class="page-title text-white text-uppercase font-adineue font-weight-bolder"
           tabindex="-1"
           v-html="'Limitless learning.<br>Constant growth.'"
         ></h1>
@@ -124,6 +124,9 @@
 
 <script setup>
 import CardProgram from '../components/CardProgram.vue'
+import { ref } from 'vue'
+import { useHead } from '@unhead/vue'
+
 
 useHead({
   title: 'adidas Global Academy',
@@ -135,7 +138,7 @@ useHead({
 const courses = ref([
   {
     image: "https://courses.adidasglobalacademy.com/asset-v1:ASU+LC01+2021_1+type@asset+block@Legacy_Logo.png",
-    duration: "1-3 hours",
+    duration: "",
     title: "Legacy Coach Fall 2022 Training",
     text: "Being a coach is more than the game. It’s committing to being a mentor and resource to the whole community. This course will help coaches navigate this responsibility."
   }
@@ -180,10 +183,10 @@ const triggerOwlDots = () => {
     z-index: 0;
   }
   
-
   .page-title {
     position: relative;
     z-index: 1;
+    font-weight: bolder;
   }
 }
 

@@ -74,6 +74,10 @@ if (pageData.value) {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  .page-title {
+    position: relative;
+    z-index: 1;
+  }
   align-items: center;
   &:after {
     position: absolute;
@@ -82,10 +86,6 @@ if (pageData.value) {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.433);
     z-index: 0;
-  }
-  .page-title {
-    position: relative;
-    z-index: 1;
   }
 }
 </style>
